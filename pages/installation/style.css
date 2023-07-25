@@ -8,14 +8,33 @@ body {
     font-family: 'Open Sans', sans-serif !important;
     /* background-color : grey; */ 
 }
+.events-link {
+    color : black;
+    text-decoration : none;
+}
+.events-link:hover {
+    color : black;
+}
+.heading-title {
+    text-align :center;
+    border : 8px solid #fff;
+    padding : 45px;
+    padding-top : 90px;
+    padding-bottom : 90px;
+    font-size: 35px;
+    width : 450px;
+    line-height : 55px;
+    letter-spacing : 3px;
+}
 .heading {
-    background-image : linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)) , url('../../data/images/OurWork_Installations&Decor.png');
+    /* background-image : linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)) , url('../../data/images/OurWork_Installations&Decor.png'); */
 /*      */
+    background-color : black;
     background-size : cover;
     background-attachment : fixed;
     background-repeat : no-repeat;
     background-position : top;
-    height : 650px;
+    height : 100vh;
     display : flex;
     justify-content : center;
     align-items : center;
@@ -66,13 +85,13 @@ body {
     z-index : 88;
 }
 
-.avant-event-container-section .container {
+/* .avant-event-container-section .container {
     display : none;
     transition : 0.4s ease;
 }
 .avant-event-container-section .container.active {
     display : block;
-}
+} */
 .event-list > div div {
     cursor : pointer;
     position : relative;

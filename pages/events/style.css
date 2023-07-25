@@ -9,14 +9,33 @@ body {
 
     /* background-color : grey; */ 
 }
+.events-link {
+    color : black;
+    text-decoration : none;
+}
+.events-link:hover {
+    color : black;
+}
+.heading-title {
+    text-align :center;
+    border : 8px solid #fff;
+    padding : 45px;
+    padding-top : 90px;
+    padding-bottom : 90px;
+    font-size: 35px;
+    width : 450px;
+    line-height : 55px;
+    letter-spacing : 3px;
+}
 .heading {
-    background-image : linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)) , url('../../data/images/OurWork_Events_New.jpg');
+    /* background-image : linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)) , url('../../data/images/OurWork_Events_New.jpg'); */
     /*  */
+    background-color : black;
     background-size : cover;
     background-attachment : fixed;
     background-repeat : no-repeat;
     background-position : top;
-    height : 650px;
+    height : 100vh;
     display : flex;
     justify-content : center;
     align-items : center;
@@ -31,10 +50,28 @@ body {
     gap : 5rem;
     padding : 40px 0;
     margin-top : 30px;
-    /* border-bottom : 1px solid black; */
+    transition : all 0.7s ease;
 }
-
-
+.events-btn {
+    position : relative;
+    cursor : pointer;
+}
+.events-btn::after {
+    content : '';
+    position : absolute;
+    left : 0;
+    bottom : -4px;
+    width : 0;
+    height : 2px;
+    background-color : #1f1d1b;
+    transition : width 200ms ease;
+}
+.events-btn.active::after {
+    width : 100%;
+}
+.events-btn:hover::after {
+    width : 100%;
+}
 .event-list {
     max-height : 750px;
     overflow-y : scroll;
@@ -48,13 +85,13 @@ body {
     z-index : 88;
 }
 
-.avant-event-container-section .container {
+/* .avant-event-container-section .container {
     display : none;
     transition : 0.4s ease;
 }
 .avant-event-container-section .container.active {
     display : block;
-}
+} */
 .event-list > div div {
     cursor : pointer;
     position : relative;

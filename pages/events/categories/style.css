@@ -30,6 +30,7 @@ body {
     justify-content : center;
     align-items : center;
     padding : 90px 0;
+    height: 100vh;
 }
 .title-description p { 
     max-width : 900px;

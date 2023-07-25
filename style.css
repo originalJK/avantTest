@@ -21,12 +21,12 @@
         height : 100vh;
     }
     section.white > .container {
-        height : 100%;
         display : flex;
         flex-direction : column;
         justify-content : center;
         align-items : center;
     }
+    
     .slick-list {
         display : none;
     }
@@ -55,4 +55,20 @@
 }
 .text-secondary {
     color : #626262 !important;
+}
+.custom-margin-top {
+    margin-top : 75px;
+}
+/*  */
+section {
+    padding : 0 !important;
+}
+.white {
+    padding : 0 !important;
+}
+.height-inherit {
+    height : inherit;
+}
+.display-none {
+    display : none;
 }
