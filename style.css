@@ -20,6 +20,12 @@
     section.white {
         height : 100vh;
     }
+    section {
+        padding : 0 !important;
+    }
+    .white {
+        padding : 0 !important;
+    }
     section.white > .container {
         display : flex;
         flex-direction : column;
